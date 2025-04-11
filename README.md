@@ -15,6 +15,6 @@ Features Implemented: incremental difficulty, useStates, scorekeeping.
 
 Learning Opportunities: I really need to find a good API to use.
 
-Demo Link: 
+Demo Link: https://vercel.com/broadsidebobs-projects/project-odin-memory-cards
 
-Additional Notes: I should play Balatro more.
+Additional Notes: The deployment, for reasons beyond me, fails to retrieve the images while the localhost version does. I think other people in the class have had this issue before, but I have not and am at a loss. Will seek advice on this topic.
