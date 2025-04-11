@@ -1,0 +1,93 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #c9ffd8; /* Light grey background */
+}
+
+h1 {
+  color: #333; /* Darker heading color */
+  margin-bottom: 20px;
+}
+
+.App {
+  max-width: 900px; /* Max width for the game area */
+  margin: 0 auto; /* Center the app */
+  text-align: center;
+}
+
+.scoreboard {
+  background-color: #488558; /* White background for scoreboard */
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Space out score elements */
+}
+
+.card-grid {
+  display: grid;
+  /* Responsive grid: 6 columns on larger screens, 4 on medium, 3 on smaller */
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px; /* Increase gap slightly */
+  padding: 20px; /* Add padding around the grid */
+  background-color: #488558; /* Light background for the grid area */
+  border-radius: 8px; /* Rounded corners for the grid area */
+}
+
+.joker-card {
+  background-color: #c9ffd8;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 10px;
+  animation: fadeIn 0.5s ease-out; /* Apply fade-in animation */
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center items horizontally */
+  cursor: pointer; /* Indicate it's clickable */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transitions */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.joker-card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Increase shadow on hover */
+}
+
+.joker-card img {
+  max-width: 96px; /* Pokemon image size */
+  height: auto;
+}
+
+.joker-card p {
+  margin-top: 10px; /* Space between image and name */
+  font-weight: bold;
+  text-transform: capitalize; /* Capitalize Pokemon names */
+}
+
+/* Add a little animation to card appearance */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for smaller screens */
+  }
+   .scoreboard {
+     flex-direction: column; /* Stack score elements vertically on small screens */
+     align-items: center;
+   }
+   .scoreboard p {
+     margin: 5px 0; /* Adjust spacing */
+   }
+}
