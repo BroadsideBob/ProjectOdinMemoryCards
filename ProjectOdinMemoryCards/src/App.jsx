@@ -91,6 +91,8 @@ function App() {
 
   return (
     <div className="App">
+      <title>Remember Jimbo?</title>
+      <link rel="icon" type="image/x-icon" href="src/assets/Joker.jpg"></link>
       <h1>Remember Jimbo?</h1>
       <Scoreboard currentScore={score} bestScore={highScore} />
       <Box jokerList={jokers} onCardClick={jokerClick} />
