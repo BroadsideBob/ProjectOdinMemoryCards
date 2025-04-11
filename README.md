@@ -17,4 +17,4 @@ Learning Opportunities: I really need to find a good API to use.
 
 Demo Link: https://vercel.com/broadsidebobs-projects/project-odin-memory-cards
 
-Additional Notes: The deployment, for reasons beyond me, fails to retrieve the images while the localhost version does. I think other people in the class have had this issue before, but I have not and am at a loss. Will seek advice on this topic.
+Additional Notes: The deployment, for reasons beyond me, fails to retrieve the images while the localhost version does. I think other people in the class have had this issue before, but I have not and am at a loss. Will seek advice on this topic. Also, I can't make the link publically accessible without paying for it and I don't know if you would still have access to my projects, so let me know directly if you can't go into it. 
